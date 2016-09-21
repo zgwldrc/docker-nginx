@@ -73,7 +73,7 @@ rm -rf ../{ngx*,nginx*}
 RUN apk add logrotate supervisor vim bash tzdata && \
     wget -O /etc/logrotate.d/nginx http://sh.xiayu.site/logrotate/nginx && \
     mkdir -p /etc/supervisor.d/ && \
-    wget -O /etc/supervisor.d/supervisord.ini  http://sh.xiayu.site/supervisor/docker-alpine-nginx-supervisord.ini && \
+    wget -O /etc/supervisor.d/supervisord.ini http://sh.xiayu.site/supervisor/docker-alpine-nginx-supervisord.ini && \
     ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime -f
     
 # Set Default Start Command
