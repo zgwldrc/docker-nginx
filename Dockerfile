@@ -76,7 +76,7 @@ RUN apk add logrotate supervisor vim bash tzdata && \
     wget -O /etc/supervisor.d/supervisord.ini http://sh.xiayu.site/supervisor/docker-alpine-nginx-supervisord.ini && \
     ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime -f
 
-RUN echo "0       0       *       *       *       /usr/sbin/logrotate -f /etc/logrotate.conf" > /var/spool/cron/crontabs/root
+RUN echo "55       23       *       *       *       /usr/sbin/logrotate -f /etc/logrotate.conf" > /var/spool/cron/crontabs/root
     
 # Set Default Start Command
 CMD ["/usr/bin/supervisord"]
