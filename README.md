@@ -1,6 +1,6 @@
 # docker-nginx
 ###Deploy Script:
-    mkdir nginx && cd nginx && curl sh.xiayu.site/docker/nginx/deploy.sh|bash
+    git clone https://code.aliyun.com/zgwldrc/docker-nginx-deploy.git nginx && cd nginx && ./00.init.sh
 ##install: /usr/local/nginx/
 ##conf:    /usr/local/nginx/conf
 ##logs:    /usr/local/nginx/logs
